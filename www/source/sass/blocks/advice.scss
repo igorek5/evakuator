@@ -1,0 +1,173 @@
+.advice {
+  padding: 20px 0;
+
+  background-color: $color-gray-darker;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 0;
+  }
+}
+
+.advice__title {
+  max-width: 550px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    max-width: none;
+    margin: 0;
+    margin-bottom: 30px;
+
+    font-size: 45px;
+    line-height: 55px;
+    text-align: start;
+  }
+}
+
+.advice__list {
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.advice__item {
+  position: relative;
+
+  margin-bottom: 20px;
+  padding: 60px 20px 20px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+
+  background-color: $color-white;
+  border: 1px solid $color-special-gray;
+  border-radius: 7px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 30px 40px;
+
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 24px;
+
+    width: 50px;
+    height: 50px;
+
+    background-image: url("../../img/svg/delivery.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px 50px;
+
+    @media (min-width: $desktop-width) {
+      top: 12px;
+      left: 28px;
+
+      width: 75px;
+      height: 75px;
+
+      background-size: 75px 75px;
+    }
+  }
+
+  &--speedometer::before {
+    width: 45px;
+    height: 45px;
+
+    background-image: url("../../img/svg/speedometer.svg");
+    background-size: 45px 45px;
+
+    @media (min-width: $desktop-width) {
+      width: 70px;
+      height: 70px;
+
+      background-size: 70px 70px;
+    }
+  }
+
+  &--star::before {
+    width: 45px;
+    height: 45px;
+
+    background-image: url("../../img/svg/medal_star.svg");
+    background-size: 45px 45px;
+
+    @media (min-width: $desktop-width) {
+      width: 63px;
+      height: 63px;
+
+      background-size: 63px 63px;
+    }
+  }
+}
+
+.advice__text {
+  position: relative;
+
+  margin: 0;
+  padding-left: 30px;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 40px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -13px;
+    left: -10px;
+
+    width: 40px;
+    height: 40px;
+
+    background-image: url("../../img/svg/ei_exclamation.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px 40px;
+
+    @media (min-width: $desktop-width) {
+      top: -18px;
+      left: -10px;
+
+      width: 50px;
+      height: 50px;
+
+      background-size: 50px 50px;
+    }
+  }
+}

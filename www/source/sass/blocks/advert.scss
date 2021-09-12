@@ -1,0 +1,168 @@
+.advert {
+  padding: 20px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 0;
+  }
+}
+
+.advert .container {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.advert__image-wrapper {
+  max-width: 570px;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.advert__image-wrapper--yandex {
+  @media (min-width: $desktop-width) {
+    width: 700px;
+    max-width: none;
+    height: 320px;
+  }
+}
+
+.advert__image-wrapper--question {
+  @media (min-width: $desktop-width) {
+    width: 470px;
+    max-width: none;
+    height: 412px;
+  }
+}
+
+.advert__image {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  margin: 0 auto;
+
+  object-fit: cover;
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    max-width: none;
+    height: 358px;
+  }
+}
+
+.advert__image--yandex {
+  @media (min-width: $desktop-width) {
+    width: 700px;
+    max-width: none;
+    height: 320px;
+  }
+}
+
+.advert__image--question {
+  @media (min-width: $desktop-width) {
+    width: 470px;
+    max-width: none;
+    height: 412px;
+  }
+}
+
+.advert__description {
+  padding: 30px 0;
+
+  @media (min-width: $desktop-width) {
+    max-width: 580px;
+  }
+}
+
+.advert__description--yandex {
+  @media (min-width: $desktop-width) {
+    max-width: 440px;
+  }
+}
+
+.advert__description--question {
+  @media (min-width: $desktop-width) {
+    max-width: 685px;
+    padding-top: 0;
+  }
+}
+
+.advert__title {
+  max-width: 450px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    max-width: none;
+
+    font-size: 45px;
+    line-height: 55px;
+    text-align: start;
+  }
+}
+
+.advert__text {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.advert__list {
+  margin: 0;
+  margin-left: 30px;
+  padding: 0;
+
+  list-style: none;
+
+  counter-reset: number 0;
+}
+
+.advert__item {
+  position: relative;
+
+  margin-bottom: 20px;
+
+  counter-increment: number;
+
+  &::before {
+    content: counter(number);
+    position: absolute;
+    top: -5px;
+    left: -34px;
+
+    width: 28px;
+    height: 28px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 29px;
+    vertical-align: middle;
+    text-align: center;
+    color: $color-orange;
+
+    background-color: $color-gray-darker;
+    border-radius: 50%;
+  }
+}
+
+.advert__list-no-styles {
+  margin: 0;
+  margin-left: 20px;
+  padding: 0;
+}
+
+.advert__list-no-styles li {
+  margin-bottom: 15px;
+}

@@ -1,0 +1,80 @@
+.promo {
+  padding: 10px 0;
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../img/content/evakuator-bg@1x.png");
+    background-repeat: no-repeat;
+    background-position: -200px 90px;
+    background-size: 1000px 400px;
+  }
+}
+
+.promo__container {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 30px 110px;
+
+    grid-template-columns: 1fr max-content;
+  }
+}
+
+.promo__background-wrapper {
+  background-image: url("../../img/content/evakuator-bg@1x.png");
+  background-repeat: no-repeat;
+  background-position: -200px 0;
+  background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    background-position: -200px 30px;
+    background-size: 1000px 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: none;
+  }
+}
+
+.promo__image {
+  width: 100%;
+  min-height: 100%;
+
+  object-fit: cover;
+}
+
+.promo__image-wrapper {
+  position: relative;
+
+  max-width: 768px;
+  margin: 0 auto;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 17px;
+
+    width: 60px;
+    height: 60px;
+
+    background-image: url("../../img/svg/sale.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60px 60px;
+
+    @media (min-width: $tablet-width) {
+      width: 100px;
+      height: 100px;
+
+      background-size: 100px 100px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 133px;
+      height: 133px;
+
+      background-size: 133px 133px;
+    }
+  }
+}

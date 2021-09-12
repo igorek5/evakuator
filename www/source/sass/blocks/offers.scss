@@ -1,0 +1,87 @@
+.offers {
+  padding: 20px 0;
+
+  background-color: $color-gray-darker;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 0;
+  }
+}
+
+.offers__title {
+  font-size: 25px;
+  line-height: 30px;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.offers__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.offers__item {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding: 0 20px 20px;
+
+  text-align: center;
+
+  background-color: $color-white;
+  border-radius: 5px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.offers__image {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    height: auto;
+  }
+}
+
+.offers__card-title {
+  margin: 30px 0;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+
+.offers__button {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin-top: auto;
+  }
+}

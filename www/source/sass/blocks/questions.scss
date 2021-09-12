@@ -1,0 +1,115 @@
+.questions {
+  padding: 20px 0;
+
+  background-color: $color-gray-darker;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 0;
+  }
+}
+
+.questions__title {
+  max-width: 450px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    max-width: none;
+    margin: 0;
+    margin-bottom: 30px;
+
+    font-size: 45px;
+    line-height: 55px;
+    text-align: start;
+  }
+}
+
+.questions__container {
+  @media (min-width: $tablet-width) {
+    display: grid;
+
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.questions__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  /*@media (min-width: $tablet-width) {
+    display: grid;
+
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+  }*/
+}
+
+
+.questions__button {
+  position: relative;
+
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 17px 50px 14px 14px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: $font-family--Muller;
+  text-align: start;
+
+  background-color: $color-white;
+  border: 1px solid $color-special-gray2;
+  border-radius: 5px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 13px;
+
+    width: 25px;
+    height: 25px;
+
+    background-image: url("../../img/svg/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px 25px;
+  }
+}
+
+.questions__button.active {
+  border-color: $color-orange;
+}
+
+.questions__button.active::before {
+  background-image: url("../../img/svg/arrow-active.svg");
+}
+
+.questions__response {
+  display: none;
+  margin: 20px;
+  margin-top: 0;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.questions__button.active ~ .questions__response {
+  display: block;
+}

@@ -1,0 +1,25 @@
+.button {
+  display: block;
+  padding: 14px 15px 10px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $font-family--Muller;
+  text-align: center;
+  color: $color-white;
+
+  background-color: $color-orange;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

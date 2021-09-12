@@ -1,0 +1,76 @@
+.info {
+  padding: 20px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 40px 0;
+  }
+}
+
+.info__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.info__item {
+  position: relative;
+
+  margin-bottom: 10px;
+  padding: 70px 10px 10px;
+
+  border: 1px solid $color-special-gray;
+  border-radius: 7px;
+
+  @media (min-width: $desktop-width) {
+    padding: 70px 20px 20px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    width: 45px;
+    height: 45px;
+
+    background-image: url("../../img/svg/24-hours.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 45px 45px;
+  }
+
+  &--calculator::before {
+    background-image: url("../../img/svg/calculator.svg");
+  }
+
+  &--clock::before {
+    background-image: url("../../img/svg/clock.svg");
+  }
+}
+
+.info__title {
+  margin: 0;
+  margin-bottom: 15px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.info__text {
+  margin: 0;
+}

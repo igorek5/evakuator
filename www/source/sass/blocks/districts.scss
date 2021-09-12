@@ -1,0 +1,64 @@
+.districts {
+  padding: 20px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 0;
+  }
+}
+
+.districts .container {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.districts__title {
+  max-width: 450px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    max-width: none;
+    margin: 0;
+
+    font-size: 45px;
+    line-height: 55px;
+    text-align: start;
+  }
+}
+
+.districts__list {
+  padding: 10px;
+}
+
+.districts__list-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.districts__image {
+  width: 100%;
+  max-width: 300px;
+  height: 100%;
+  margin: 0 auto;
+
+  object-fit: cover;
+
+  @media (min-width: $desktop-width) {
+    width: 568px;
+    max-width: none;
+    height: 331px;
+    margin: 0;
+  }
+}

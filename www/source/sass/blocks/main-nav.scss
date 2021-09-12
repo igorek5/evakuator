@@ -1,0 +1,226 @@
+.main-nav__wrapper {
+  @media (min-width: $desktop-width) {
+    background-color: $color-dark;
+  }
+}
+
+.main-nav {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 11px 110px 8px;
+
+    grid-column-gap: 95px;
+    grid-row-gap: 20px;
+    grid-template-columns: 1fr max-content;
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 75px;
+  left: 50%;
+
+  width: 77px;
+  height: 57px;
+  padding: 0;
+
+  background-color: transparent;
+  border: 0;
+  transform: translate(-50%);
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    right: 19px;
+
+    width: 39px;
+    height: 3px;
+
+    background-color: $color-black;
+    border-radius: 2px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 33px;
+    right: 26px;
+
+    width: 25px;
+    height: 3px;
+
+    background-color: $color-black;
+    border-radius: 2px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__list {
+  position: absolute;
+  top: 134px;
+  z-index: 5;
+
+  display: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  text-align: center;
+
+  background-color: $color-dark;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1024px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 10px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: none;
+    margin-bottom: 0;
+  }
+}
+
+.main-nav__list-wrapper {
+  @media (min-width: $tablet-width) {
+    background-color: $color-dark;
+  }
+}
+
+.main-nav.open .main-nav__list {
+  @media (max-width: $tablet-width - 1) {
+    display: block;
+  }
+}
+
+.main-nav.open .main-nav__toggle::before {
+  top: 25px;
+  right: 19px;
+
+  width: 39px;
+
+  transform: rotate(45deg);
+}
+
+.main-nav.open .main-nav__toggle::after {
+  top: 25px;
+  right: 20px;
+
+  width: 39px;
+
+  transform: rotate(-45deg);
+}
+
+.main-nav.no-js .main-nav__toggle {
+  display: none;
+}
+
+.main-nav.no-js .main-nav__list {
+  position: static;
+
+  display: block;
+}
+
+.main-nav__link {
+  display: block;
+  padding: 22px 20px 23px;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: $color-white;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 10px;
+
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 10px 8px;
+
+    font-size: 16px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__link.active {
+  @media (min-width: $tablet-width) {
+    border-bottom: 2px solid $color-white;
+  }
+}
+
+.main-nav__phone {
+  position: relative;
+
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  padding: 10px 0;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+
+  @media (min-width: $desktop-width) {
+    color: $color-white;
+    padding: 12px 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -29px;
+
+    width: 20px;
+    height: 20px;
+
+    background-image: url("../img/svg/icon-whatsapp.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
