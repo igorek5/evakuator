@@ -1,26 +1,26 @@
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: "Muller";
+  font-family: "Bloggersans";
 
   font-display: swap;
-  src: url("../fonts/Muller-Regular.woff2") format("woff2"), url("../fonts/Muller-Regular.woff") format("woff");
+  src: url("../../fonts/bloggersans.woff2") format("woff2"), url("../../fonts/bloggersans.woff") format("woff");
 }
 
 @font-face {
   font-style: normal;
   font-weight: 700;
-  font-family: "Muller";
+  font-family: "Bloggersans";
 
   font-display: swap;
-  src: url("../fonts/Muller-Bold.woff2") format("woff2"), url("../fonts/Muller-Bold.woff") format("woff");
+  src: url("../../fonts/bloggersans-bold.woff2") format("woff2"), url("../../fonts/bloggersans-bold.woff") format("woff");
 }
 
 @font-face {
   font-style: normal;
   font-weight: 500;
-  font-family: "Muller";
+  font-family: "Bloggersans";
 
   font-display: swap;
-  src: url("../fonts/Muller-Medium.woff2") format("woff2"), url("../fonts/Muller-Medium.woff") format("woff");
+  src: url("../../fonts/bloggersans-medium.woff2") format("woff2"), url("../../fonts/bloggersans.woff") format("woff");
 }

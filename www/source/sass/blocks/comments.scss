@@ -1,0 +1,32 @@
+.comment {
+  padding: 70px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 80px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 90px 0;
+  }
+}
+
+.comment__title {
+  max-width: 550px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+
+
+  @media (min-width: $desktop-width) {
+    max-width: none;
+    margin: 0;
+    margin-bottom: 30px;
+
+    font-size: 45px;
+    line-height: 55px;
+  }
+}

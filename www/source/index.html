@@ -5,15 +5,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Эвакуатор</title>
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="preload" href="fonts/Muller-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="favicons/favicon@x180.png">
+  <link rel="manifest" href="favicons.webmanifest">
+  <link rel="preload" href="fonts/bloggersans.woff2" as="font" crossorigin="anonymous" type="font/woff2">
 </head>
 
 <body class="page-body">
   <header class="page-header">
     <div class="page-header__top">
+      <!--aria-label="Переход на главную страницу" // дописать к ссылки атрибут для внутренней стр.  -->
       <a class="page-header__logo">
         <picture>
+          <source type="image/webp" srcset="img/content/logo@1x.webp, img/content/logo@2x.webp 2x">
           <img class="page-header__logo-image" src="img/content/logo@1x.png" srcset="img/content/logo@2x.png 2x"
             width="315" height="90" alt="Логотип «Evakuator help»">
         </picture>
@@ -21,7 +27,7 @@
       <div class="page-header__wrapper">
         <ul class="page-header__info">
           <li class="page-header__item page-header__item--timing">Круглосуточно</li>
-          <li class="page-header__item page-header__item--address">г. Санкт - Петербург и&nbspЛенинградская обл.</li>
+          <li class="page-header__item page-header__item--address">г. Санкт - Петербург и&nbsp;Ленинградская обл.</li>
         </ul>
         <div class="page-header__prices">
           <a href="#" class="button page-header__see">Смотреть цены</a>
@@ -29,8 +35,8 @@
         </div>
       </div>
     </div>
-    <div class="main-nav__wrapper">
-      <nav class="main-nav open no-js">
+    <div class="main-nav">
+      <nav class=" main-nav__wrapper open no-js">
         <button class="main-nav__toggle" type="button" aria-label="Открыть/закрыть меню"></button>
         <div class="main-nav__list-wrapper">
           <ul class="main-nav__list">
@@ -49,10 +55,10 @@
             <li class="main-nav__item">
               <a class="main-nav__link" href="#">Контакты</a>
             </li>
-            </li>
+
           </ul>
         </div>
-        <a class="main-nav__phone" href="tel:+78129244747">8 812 924 47 47</a>
+        <a class="main-nav__phone" href="tel:+78129244747">8 (812) 924 47 47</a>
       </nav>
     </div>
   </header>
@@ -63,6 +69,7 @@
         <div class="promo__background-wrapper">
           <div class="promo__image-wrapper">
             <picture>
+              <source type="image/webp" srcset="img/content/evakuator@1x.webp, img/content/evakuator@2x.webp 2x">
               <img class="promo__image" src="img/content/evakuator@1x.png" srcset="img/content/evakuator@2x.png 2x"
                 width="320" height="150" alt="Эвакуатор">
             </picture>
@@ -112,6 +119,7 @@
       <div class="container">
         <div class="advert__image-wrapper">
           <picture>
+            <source type="image/webp" srcset="img/content/tow-truck@1x.webp, img/content/tow-truck@2x.webp 2x">
             <img class="advert__image" src="img/content/tow-truck@1x.jpg" srcset="img/content/tow-truck@2x.jpg 2x"
               alt="Эвакуатор с BMW" width="320" height="150">
           </picture>
@@ -130,7 +138,7 @@
 
       <table class="prices__table">
         <tr class="prices__teble-header">
-          <td>Тонаж</td>
+          <td>Тоннаж</td>
           <td>Цена по одному району</td>
           <td>Цена по городу</td>
           <td>Фиксированная цена по городу</td>
@@ -212,6 +220,7 @@
         </div>
         <div class="advert__image-wrapper">
           <picture>
+            <source type="image/webp" srcset="img/content/tow-truck2@1x.webp, img/content/tow-truck2@2x.webp 2x">
             <img class="advert__image" src="img/content/tow-truck2@1x.jpg" srcset="img/content/tow-truck2@2x.jpg 2x"
               alt="Эвакуатор с BMW" width="320" height="150">
           </picture>
@@ -245,15 +254,18 @@
 
         </div>
         <picture>
+          <source type="image/webp" srcset="img/content/map@1x.webp, img/content/map@2x.webp 2x">
           <img class="calculation__image" width="320" height="150" alt="Карта" src="img/content/map@1x.jpg"
             srcset="img/content/map@2x.jpg 2x">
         </picture>
       </div>
     </section>
+
     <section class="advert">
       <div class="container">
         <div class="advert__image-wrapper advert__image-wrapper--yandex">
           <picture>
+            <source type="image/webp" srcset="img/content/yandex@1x.webp, img/content/yandex@2x.webp 2x">
             <img class="advert__image advert__image--yandex" src="img/content/yandex@1x.jpg"
               srcset="img/content/yandex@2x.jpg 2x" alt="Эвакуатор с BMW" width="320" height="150">
           </picture>
@@ -308,6 +320,7 @@
       <div class="container">
         <div class="advert__image-wrapper advert__image-wrapper--question">
           <picture>
+            <source type="image/webp" srcset="img/content/tow-truck3@1x.webp, img/content/tow-truck3@2x.webp 2x">
             <img class="advert__image advert__image--question" src="img/content/tow-truck3@1x.jpg"
               srcset="img/content/tow-truck3@2x.jpg 2x" alt="Эвакуатор грузит фольксваген" width="320" height="150">
           </picture>
@@ -337,6 +350,7 @@
         <ul class="offers__list">
           <li class="offers__item">
             <picture>
+              <source type="image/webp" srcset="img/content/jcb@1x.webp, img/content/jcb@2x.webp 2x">
               <img class="offers__image" width="200" height="86" src="img/content/jcb@1x.jpg"
                 srcset="img/content/jcb@2x.jpg 2x" alt="JCB">
             </picture>
@@ -345,6 +359,7 @@
           </li>
           <li class="offers__item">
             <picture>
+              <source type="image/webp" srcset="img/content/moto@1x.webp, img/content/moto@2x.webp 2x">
               <img class="offers__image" width="200" height="86" src="img/content/moto@1x.jpg"
                 srcset="img/content/moto@2x.jpg 2x" alt="Мотоцикл">
             </picture>
@@ -353,6 +368,7 @@
           </li>
           <li class="offers__item">
             <picture>
+              <source type="image/webp" srcset="img/content/iveco@1x.webp, img/content/iveco@2x.webp 2x">
               <img class="offers__image" width="200" height="86" src="img/content/iveco@1x.jpg"
                 srcset="img/content/iveco@2x.jpg 2x" alt="Iveco">
             </picture>
@@ -361,6 +377,7 @@
           </li>
           <li class="offers__item">
             <picture>
+              <source type="image/webp" srcset="img/content/audi@1x.webp, img/content/audi@2x.webp 2x">
               <img class="offers__image" width="200" height="86" src="img/content/audi@1x.jpg"
                 srcset="img/content/audi@2x.jpg 2x" alt="ауди">
             </picture>
@@ -369,6 +386,7 @@
           </li>
           <li class="offers__item">
             <picture>
+              <source type="image/webp" srcset="img/content/ford-transit@1x.webp, img/content/ford-transit@2x.webp 2x">
               <img class="offers__image" width="200" height="86" src="img/content/ford-transit@1x.jpg"
                 srcset="img/content/ford-transit@2x.jpg 2x" alt="Форд транзит">
             </picture>
@@ -377,6 +395,7 @@
           </li>
           <li class="offers__item">
             <picture>
+              <source type="image/webp" srcset="img/content/lexus@1x.webp, img/content/lexus@2x.webp 2x">
               <img class="offers__image" width="200" height="86" src="img/content/lexus@1x.jpg"
                 srcset="img/content/lexus@2x.jpg 2x" alt="Лексус">
             </picture>
@@ -385,6 +404,7 @@
           </li>
           <li class="offers__item">
             <picture>
+              <source type="image/webp" srcset="img/content/jeep@1x.webp, img/content/jeep@2x.webp 2x">
               <img class="offers__image" width="200" height="86" src="img/content/jeep@1x.jpg"
                 srcset="img/content/jeep@2x.jpg 2x" alt="jeep">
             </picture>
@@ -393,6 +413,7 @@
           </li>
           <li class="offers__item">
             <picture>
+              <source type="image/webp" srcset="img/content/ford@1x.webp, img/content/ford@2x.webp 2x">
               <img class="offers__image" width="200" height="86" src="img/content/ford@1x.jpg"
                 srcset="img/content/ford@2x.jpg 2x" alt="Форд">
             </picture>
@@ -402,7 +423,6 @@
         </ul>
       </div>
     </section>
-
     <section class="districts">
       <div class="container">
         <div class="districts__wrapper">
@@ -435,8 +455,11 @@
             </ul>
           </div>
         </div>
-        <img class="districts__image" src="img/content/map-districts@1x.png"
-          srcset="img/content/map-districts@2x.png 2x" width="278px" height="100px" alt="Карта">
+        <picture>
+          <source type="image/webp" srcset="img/content/map-districts@1x.webp, img/content/map-districts@2x.webp 2x">
+          <img class="districts__image" src="img/content/map-districts@1x.png"
+            srcset="img/content/map-districts@2x.png 2x" width="278" height="100" alt="Карта">
+        </picture>
       </div>
     </section>
     <section class="advice">
@@ -460,7 +483,163 @@
           случая.</p>
       </div>
     </section>
+    <section class="comment">
+      <h2 class="comment__title">Эвакуаторы в Санкт - Петербурге отзывы</h2>
+      <div class="slider">
+        <div class="slider__wrapper">
+          <ul class="slider__list">
+            <li class="slider__item">
+              <div class="slider__user">
+                <picture>
+                  <source type="image/webp" srcset="img/slider-img/user1@1x.webp, img/slider-img/user1@2x.webp 2x">
+                  <img class="slider__avatar" alt="Аватар" width="68" height="68" src="img/slider-img/user1@1x.jpg"
+                    srcset="img/slider-img/user1@2x.jpg 2x">
+                </picture>
+                <span class="slider__name">Дмитрий Сергеев</span>
+              </div>
+              <div class="slider__comment">
+                <p class="slider__text">
+                  Обращался сам к ним и сложилось, что я
+                  эту службу эвакуации уже знаю. Просто
+                  как то с другом ехали, попали в ДТП,
+                  пришлось эвакуатор вызывать. Я тогда
+                  себе это на заметку взял. Сейчас вот
+                  самому пришлось звать на помощь. Но я
+                  не в ДТП попал, у меня машина посреди
+                  трассы встала. Пришлось им звонить.
+                  Подъехал водитель где — то через час,
+                  машину загрузил и привёз меня в город.
+                  Четко работают, за это и благодарен.
+                </p>
+                <time datetime="2021-08-24 19:00">24.08.2021</time>
+              </div>
+            </li>
+            <li class="slider__item">
+              <div class="slider__user">
+                <picture>
+                  <source type="image/webp" srcset="img/slider-img/user2@1x.webp, img/slider-img/user2@2x.webp 2x">
+                  <img class="slider__avatar" alt="Аватар" width="68" height="68" src="img/slider-img/user2@1x.jpg"
+                    srcset="img/slider-img/user2@2x.jpg 2x">
+                </picture>
+                <span class="slider__name">Светлана Иванова</span>
+              </div>
+              <div class="slider__comment">
+                <p class="slider__text">
+                  Обращался сам к ним и сложилось, что я
+                  эту службу эвакуации уже знаю. Просто
+                  как то с другом ехали, попали в ДТП,
+                  пришлось эвакуатор вызывать. Я тогда
+                  себе это на заметку взял. Сейчас вот
+                  самому пришлось звать на помощь. Но я
+                  не в ДТП попал, у меня машина посреди
+                  трассы встала. Пришлось им звонить.
+                  Подъехал водитель где — то через час,
+                  машину загрузил и привёз меня в город.
+                </p>
+                <time datetime="2021-08-24 19:00">24.08.2021</time>
+              </div>
+            </li>
 
+
+            <li class="slider__item">
+              <div class="slider__user">
+                <picture>
+                  <source type="image/webp" srcset="img/slider-img/user3@1x.webp, img/slider-img/user3@2x.webp 2x">
+                  <img class="slider__avatar" alt="Аватар" width="68" height="68" src="img/slider-img/user3@1x.jpg"
+                    srcset="img/slider-img/user3@2x.jpg 2x">
+                </picture>
+                <span class="slider__name">Елена Петрова</span>
+
+              </div>
+              <div class="slider__comment">
+                <p class="slider__text">
+                  Вызывал из данной компании
+                  эвакуатор для своего автомобиля
+                  Соренто прайм. Автомобиль большой,
+                  почти новый. Понятно что переживал
+                  нормально ли пройдет эвакуация.
+                  Сотрудник прибыл вовремя, сделал все
+                  четко, быстро. Цена ровно такая, как
+                  написано на сайте и как озвучивали
+                  по телефону.
+                </p>
+                <time datetime="2021-08-24 19:00">24.08.2021</time>
+              </div>
+            </li>
+
+            <li class="slider__item">
+              <div class="slider__user">
+                <picture>
+                  <source type="image/webp" srcset="img/slider-img/user1@1x.webp, img/slider-img/user1@2x.webp 2x">
+                  <img class="slider__avatar" alt="Аватар" width="68" height="68" src="img/slider-img/user1@1x.jpg"
+                    srcset="img/slider-img/user1@2x.jpg 2x">
+                </picture>
+                <span class="slider__name">Дмитрий Сергеев</span>
+              </div>
+              <div class="slider__comment">
+                <p class="slider__text">
+                  Обращался сам к ним и сложилось, что я
+                  эту службу эвакуации уже знаю. Просто
+                  как то с другом ехали, попали в ДТП,
+                  пришлось эвакуатор вызывать. Я тогда
+                  себе это на заметку взял. Сейчас вот
+                  самому пришлось звать на помощь. Но я
+                  не в ДТП попал, у меня машина посреди
+                  трассы встала. Пришлось им звонить.
+                  Подъехал водитель где — то через час,
+                  машину загрузил и привёз меня в город.
+                  Четко работают, за это и благодарен.
+                </p>
+                <time datetime="2021-08-24 19:00">24.08.2021</time>
+
+              </div>
+            </li>
+            <li class="slider__item">
+              <div class="slider__user">
+                <picture>
+                  <source type="image/webp" srcset="img/slider-img/user2@1x.webp, img/slider-img/user2@2x.webp 2x">
+                  <img class="slider__avatar" alt="Аватар" width="68" height="68" src="img/slider-img/user2@1x.jpg"
+                    srcset="img/slider-img/user2@2x.jpg 2x">
+                </picture>
+                <span class="slider__name">Светлана Иванова</span>
+              </div>
+              <div class="slider__comment">
+                <p class="slider__text">
+                  Обращался сам к ним и сложилось, что я
+                  эту службу эвакуации уже знаю. Просто
+                  как то с другом ехали, попали в ДТП,
+                  пришлось эвакуатор вызывать. Я тогда
+                  себе это на заметку взял. Сейчас вот
+                  самому пришлось звать на помощь. Но я
+                  не в ДТП попал, у меня машина посреди
+                  трассы встала. Пришлось им звонить.
+                  Подъехал водитель где — то через час,
+                  машину загрузил и привёз меня в город.
+                </p>
+                <time datetime="2021-08-24 19:00">24.08.2021</time>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+
+        <div class="slider__control">
+          <button type="button" class="slider__button slider__button--left" aria-label="Лево">
+            <svg width="20" height="39" viewBox="0 0 20 39" fill="#CDCDCD" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16.4563 38.4586C16.0517 38.46 15.652 38.3707 15.2864 38.1973C14.9208 38.0239 14.5988 37.7708 14.3438 37.4565L1.2626 21.2065C0.864251 20.7219 0.646484 20.1141 0.646484 19.4868C0.646484 18.8594 0.864251 18.2516 1.2626 17.767L14.8043 1.51697C15.264 0.963879 15.9246 0.616063 16.6407 0.550035C17.3569 0.484006 18.0699 0.705174 18.623 1.16488C19.1761 1.62459 19.5239 2.28518 19.5899 3.00134C19.656 3.71749 19.4348 4.43054 18.9751 4.98363L6.86885 19.5003L18.5688 34.017C18.9 34.4145 19.1104 34.8986 19.1751 35.412C19.2397 35.9253 19.156 36.4465 18.9338 36.9137C18.7115 37.381 18.3601 37.7748 17.9211 38.0486C17.482 38.3224 16.9737 38.4647 16.4563 38.4586Z" />
+            </svg>
+          </button>
+          <button type="button" class="slider__button slider__button--right" aria-label="Право">
+            <svg width="20" height="39" viewBox="0 0 20 39" fill="#CDCDCD" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M3.54366 38.4586C3.94827 38.46 4.34804 38.3707 4.71361 38.1973C5.07918 38.0239 5.40125 37.7708 5.65615 37.4565L18.7374 21.2065C19.1357 20.7219 19.3535 20.1141 19.3535 19.4868C19.3535 18.8594 19.1357 18.2516 18.7374 17.767L5.19574 1.51697C4.73603 0.963879 4.07544 0.616063 3.35928 0.550035C2.64313 0.484006 1.93007 0.705174 1.37699 1.16488C0.823902 1.62459 0.476086 2.28518 0.410057 3.00134C0.34403 3.71749 0.565195 4.43054 1.0249 4.98363L13.1312 19.5003L1.43116 34.017C1.09997 34.4145 0.889597 34.8986 0.824923 35.412C0.76025 35.9253 0.843983 36.4465 1.06622 36.9137C1.28845 37.381 1.63988 37.7748 2.07893 38.0486C2.51798 38.3224 3.02627 38.4647 3.54366 38.4586Z" />
+            </svg>
+          </button>
+        </div>
+        <a class="button slider__button-comment" href="#">Оставить отзыв</a>
+      </div>
+    </section>
     <section class="questions">
       <div class="container">
         <h2 class="questions__title">Часто задаваемые вопросы по вызову эвакуатора</h2>
@@ -494,46 +673,135 @@
               <button type="button" class="questions__button">Возможна ли транспортировка в другой город?</button>
               <p class="questions__response">Тест</p>
             </li>
+          </ul>
         </div>
       </div>
-      <!--<ul class="questions__list">
-          <li class="questions__item">
-            <button type="button" class="questions__button">Сколько время подачи эвакуатора?</button>
-            <p class="questions__response">Тест</p>
-          </li>
-          <li class="questions__item">
-            <button type="button" class="questions__button">Сколько стоит подача эвакуатора?</button>
-            <p class="questions__response">В нашей компании подача эвакуатора бесплатна!</p>
-          </li>
-          <li class="questions__item">
-            <button type="button" class="questions__button">Возможна ли транспортировка в другой город?</button>
-            <p class="questions__response">Тест</p>
-          </li>
-          <li class="questions__item">
-            <button type="button" class="questions__button">Сколько время подачи эвакуатора?</button>
-            <p class="questions__response">Тест</p>
-          </li>
-          <li class="questions__item">
-            <button type="button" class="questions__button">Сколько время подачи эвакуатора?</button>
-            <p class="questions__response">Тест</p>
-          </li>
-          <li class="questions__item">
-            <button type="button" class="questions__button">Сколько время подачи эвакуатора?</button>
-            <p class="questions__response">Тест</p>
-          </li>
-        </ul>-->
-
-      </div>
-
     </section>
 
 
   </main>
-  <footer>
-    jy
+  <footer class="page-footer">
+    <div class="container">
+
+      <div class="page-footer__top">
+
+        <div class="page-footer__block">
+
+          <!--aria-label="Переход на главную страницу" // дописать к ссылки атрибут для внутренней стр.  -->
+          <a class="page-footer__logo">
+            <picture>
+              <img class="page-footer__logo-image" src="img/content/small-logo@1x.png"
+                srcset="img/content/small-logo@2x.png 2x" width="216" height="58" alt="Логотип «Evakuator help»">
+            </picture>
+          </a>
+          <p class="page-footer__title">Помошь на дороге</p>
+          <ul class="page-footer__list">
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">Автоэлектрик</a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">Вскрытие</a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">Вскрытие авто</a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">Выездной шиномонтаж</a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">Трезвый водитель</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="page-footer__block">
+          <p class="page-footer__title">Эвакуация</p>
+
+          <ul class="page-footer__list">
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">Эвакуатор</a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">Грузовой эвакуатор</a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">Эвакуатор спецтехники в СПБ</a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">Мотоэвакутор в СПб</a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">Эвакуатор грузовиков в СПб</a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">Эвакуатор легковых авто в СПб</a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">Эвакуатор микроавтобусов в СПб</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="page-footer__block">
+          <p class="page-footer__title">Эвакуация</p>
+
+          <ul class="page-footer__list">
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">Эвакуатор кроссоверов в СПб</a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">Эвакуатор внедорожников в СПб</a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">Эвакуатор комерческого транспорта в СПб</a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">Эвакуатор в Ленинградской области</a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">Эвакуатор 24 часа</a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">Эвакуатор у метро</a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">Цены на вызов эвакуатора</a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="page-footer__contacts">
+          <li class="page-footer__contacts-item">
+            <p class="page-footer__title">Контактна информация</p>
+          </li>
+          <li class="page-footer__contacts-item page-footer__contacts-item--mail">
+            <a class="page-footer__mail" href="mailto:mail@evakuatorhelp.ru">mail@evakuatorhelp.ru</a>
+          </li>
+          <li class="page-footer__contacts-item page-footer__contacts-item--address">
+            <span class="page-footer__address">г. Санкт - Петербург и Ленинградская обл.</span>
+          </li>
+          <li class="page-footer__contacts-item page-footer__contacts-item--time">
+            <span class="page-footer__time">Круглосуточно</span>
+          </li>
+
+
+          <li class="page-footer__contacts-item page-footer__contacts-item--phone">
+            <a class="page-footer__phone" href="tel:+78129244747">8 (812) 924 47 47</a>
+          </li>
+          <li class="page-footer__contacts-item">
+            <a class="page-footer__button button">Обратная связь</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+    <div class="page-footer__bottom">
+      <span class="page-footer__copyright">2021 Все права защищены</span>
+    </div>
   </footer>
   <script src="js/main-nav.js"></script>
   <script src="js/questions.js"></script>
+  <script src="js/slider.js"></script>
 </body>
 
 </html>
