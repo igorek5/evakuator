@@ -4,7 +4,7 @@
   font-family: "Bloggersans";
 
   font-display: swap;
-  src: url("../fonts/bloggersans-bold.woff2") format("woff2"), url("../fonts/bloggersans.woff") format("woff");
+  src: url("../fonts/bloggersans.woff2") format("woff2"), url("../fonts/bloggersans.woff") format("woff");
 }
 
 @font-face {
@@ -117,7 +117,7 @@ input[type="radio"].visually-hidden {
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
-  font-family: "Muller", "Arial", sans-serif;
+  font-family: "Bloggersans", "Arial", sans-serif;
   text-align: center;
   color: #ffffff;
 
@@ -1844,7 +1844,7 @@ input[type="radio"].visually-hidden {
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
-  font-family: "Muller", "Arial", sans-serif;
+  font-family: "Bloggersans", "Arial", sans-serif;
   text-align: start;
 
   background-color: #ffffff;
