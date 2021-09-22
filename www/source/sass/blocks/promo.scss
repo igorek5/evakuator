@@ -2,7 +2,7 @@
   padding: 10px 0;
 
   @media (min-width: $desktop-width) {
-    background-image: url("../../img/content/evakuator-bg@1x.png");
+    background-image: url("../img/content/evakuator-bg@1x.png");
     background-repeat: no-repeat;
     background-position: -200px 90px;
     background-size: 1000px 400px;
@@ -21,7 +21,7 @@
 }
 
 .promo__background-wrapper {
-  background-image: url("../../img/content/evakuator-bg@1x.png");
+  background-image: url("../img/content/evakuator-bg@1x.png");
   background-repeat: no-repeat;
   background-position: -200px 0;
   background-size: cover;
@@ -58,7 +58,7 @@
     width: 60px;
     height: 60px;
 
-    background-image: url("../../img/svg/sale.svg");
+    background-image: url("../img/svg/sale.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 60px 60px;
